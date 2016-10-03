@@ -1,4 +1,4 @@
-#Google Finance Stock Scraper
+#Google Finance Stock Scraper 
 
 ##Author: Kevin Cho
 
