@@ -13,7 +13,7 @@ df = pd.DataFrame
 mu, sigma = 0, 1 #mean and standard deviation
 
 randnorm = np.random.normal(mu, sigma, 255)
-annualreturn = .30 #expected Annual Return (30%)
+annualreturn = .30 #Expected Annual Return (30%)
 annualstddev = .2 #Expected annual standard deviation (20%)
 startprice = 100 #Expected Starting Price
 price = []
