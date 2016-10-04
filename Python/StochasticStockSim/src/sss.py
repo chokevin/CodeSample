@@ -6,23 +6,22 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import math as m
+import stochasticmodel as sm
 
 df = pd.DataFrame
 
 mu, sigma = 0, 1 #mean and standard deviation
 
-Z = np.random.normal(mu, sigma, 255)
-u = .30 #expected Annual Return (30%)
-sd = .2 #Expected annual standard deviation (20%)
-s = 100 #Expected Starting Price
-a = 2
+randnorm = np.random.normal(mu, sigma, 255)
+annualreturn = .30 #expected Annual Return (30%)
+annualstddev = .2 #Expected annual standard deviation (20%)
+startprice = 100 #Expected Starting Price
 price = []
 
-for i in Z:
-    S = s + s*(u/255 + sd/m.sqrt(255)*i)
-    price.append(S)
-    s = S
-    a += 1
+for i in randnorm:
+    newprice = sm.stochasticModel(annualreturn, annualstddev, startprice, i)
+    price.append(newprice)
+    startprice = newprice
 
 df = df(price)
 print(df.describe())
