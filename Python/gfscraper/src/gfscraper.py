@@ -10,7 +10,7 @@ import json
 #Setting up the logger
 logger = logging.getLogger('stockprices')
 logger.setLevel(logging.DEBUG)
-fh = logging.FileHandler('data/stockprices.log')
+fh = logging.FileHandler('../data/stockprices.log')
 fh.setLevel(logging.DEBUG)
 ch = logging.StreamHandler()
 ch.setLevel(logging.ERROR)
@@ -47,7 +47,7 @@ def gfscraper():
     span = div.find('span', attrs={'id':'ref_764194243742232_l'})
     stockprices['fitbit'] = span.text
 
-    with open('data/data.JSON', 'w') as outfile:
+    with open('../data/data.JSON', 'w') as outfile:
         json.dump(stockprices, outfile)
 
     logger.info('Completed Script Sequence')
