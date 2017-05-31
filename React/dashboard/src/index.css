@@ -7,3 +7,12 @@ body {
 .App-header {
     height: 200px;
 }
+
+.loginbutton {
+    margin-left: 650px;
+    position: absolute;
+}
+
+.button-inputbox {
+    padding: 20px;
+}
