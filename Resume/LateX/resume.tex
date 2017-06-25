@@ -1,10 +1,6 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
-% add an objective?
-%\ remember to make the resume tailored for the job. ._.
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{geometry}
@@ -18,32 +14,36 @@
 \raggedbottom
 \setlist{nolistsep}
 \name{Kevin Cho}
-
-% {E-mail}{mobilephone}{homepage}
-% be careful of _ in emaill address
 \contactInfo{chokevin@hawaii.edu}{(+1) 808-230-6617}{github.com/chokevin}
-% {E-mail}{mobilephone}
-% keep the last empty braces!
-%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
-
-\section{Objective}
-Seeking a software internship that tackles challenging problems to improve upon existing software solutions
+%\section{Objective}
+%Seeking a software internship that tackles challenging problems to improve upon existing software solutions
 
 \section{%\faGraduationCap
 Education}
-\datedsubsection{\textbf{University of Hawaii at Manoa}, USA, Hawaii}{Fall 2014 -- Present}
-\textit{Bachelors of Science} in Computer Engineering (CENG), Cumulative GPA : (3.79/4.0), \textbf{Expected May 2018} 
+\datedsubsection{\textbf{University of Hawaii at Manoa}, USA, Hawaii}{Aug 2014 -- Present}
+\textit{Bachelors of Science} in Computer Engineering (CENG), Cumulative GPA : (3.83/4.0), \textbf{Expected May 2018}
 \begin{itemize}[noitemsep,nolistsep]
   \item Received Chancellor's Scholarship awarded \$10000/yr to the top 5\% of freshman enrollment at UH Manoa
 \end{itemize}
 \section{%\faUsers\
  Job/Internship Experience}
 
+ \datedsubsection{\textbf{Amazon}, USA, Hawaii}{May 2017 -- Present}
+ \role{Software Development Engineer Intern}{}
+ \begin{itemize}[noitemsep,nolistsep]
+   \item Redesigned Amazon mobile application publishing experience using React/Redux
+   \item Implemented backend to support publishing recently viewed, wishlists, and product varieties in Java and Spring
+   \item Refactored existing code for increased readability and reusability.
+   \item Built unit and integration tests for 100\% code coverage using JUnit and JaCoCo.
+ \end{itemize}
+
 \datedsubsection{\textbf{University of Hawaii at Manoa}, USA, Hawaii}{Fall 2016 -- Present}
-\role{Digital Logic Design Lab Teaching Assistant}{}
+\role{Undergraduate Teaching Assistant}{}
 \begin{itemize}[noitemsep,nolistsep]
+  \item Instruct on C++ and object oriented programming paradigm through labs and homework to 26 students weekly.
+  \item Design bash scripts to automate testing of lab assignments.
   \item Lead 25 students in FPGA and basic digital circuit design through weekly labs
-\end{itemize} 
+\end{itemize}
 
 \datedsubsection{\textbf{Northrop Grumman Aerospace Systems}, USA, California}{Summer 2016}
 \role{Microelectronics Technical Intern}{Manager: Joseph Gonzalez}
@@ -53,91 +53,45 @@ Education}
   \item Simulated calibration structures using ADS and Sonnet 2D EM software packages
 \end{itemize}
 
-\datedsubsection{\textbf{Tokyo University of Agriculture and Technology}, Japan, Tokyo}{Summer 2015}
-\role{Electromagnetic Research Intern}{Professor Takuji Arima}
-\begin{itemize}[noitemsep,nolistsep]
-  %\item Researched computational electromagnetics involving wave propagation entering a homogenous medium
-  \item Created tutorial for new lab experiment implemented by the UH Manoa Basic Circuit Analysis I lab
-\end{itemize}
-
-\section{%\faKeyboardO\ 
+\section{%\faKeyboardO\
 Relevant Experience}
 
-\datedsubsection{\textbf{Stock Market Prediction \& Calculation Algorithms}}{Fall 2016 -- Present}
-\role{C++/Python}{Individual Project}
-\begin{itemize}[noitemsep,nolistsep]
-  \item Built a simulation and graphical output predicted stochastic processes for various blue chip stocks in Python 
-  \item Created a computational model of profit/loss of discrete interval hedging in C++ 
+\datedsubsection{\textbf{Data Visualization Dashboard for Weather Sensor Data}}{Jan 2017 -- Present}
+\role{Python/Javascript/HTML5/CSS}{}
+\begin{itemize}[noitemsep, nolistsep]
+  \item Implemented plot generation through the plot.ly Python API for sensor data collected from weather sensor nodes.
+  \item Pioneered unit and integration testing through pytest, coverage, and nose which led to 100\% code coverage.
 \end{itemize}
 
-\datedsubsection{\textbf{Farmer's Market Locator Web App}}{Fall 2016 -- Present}
-\role{React.js}{Individual Project}
-% Brief introduction: Working on creating a web app and mobile app which showcases the best of Hawaii.
-\begin{itemize}[noitemsep,nolistsep]
-  \item Developed front-end and back-end using React and Redux 
-  \item Built search function to sort through farmer's markets by location and name based on JSON data
-\end{itemize}
+\datedsubsection{\textbf{Ambient Dynamix Google Nearby Android Plugin}}{Jan 2017 -- May 2017}
+\role{Java}{}
+\begin{itemize}[noitemsep, nolistsep]
+  \item Plugin developer for an Internet of Things (IoT) smart gateway framework for IoT interaction.
+  \item Implemented Google Nearby API for proximity-based web content loading for easy access, but secure IoT endpoints
+  \item Demonstrated through android application for Senior design review.
+  \end{itemize}
 
-%\datedsubsection{\textbf{International Microwave Symposium 2017 Mobile App}}{Summer 2016 -- Present}
-%\role{Swift}{Individual Project}
-% Brief introduction: Working on creating a web app and mobile app which showcases the best of Hawaii.
-%\begin{itemize}[noitemsep,nolistsep]
-%  \item Implemented loading screen instructions to existing mobile app using XCode
-%\end{itemize}
-
-\datedsubsection{\textbf{Automated Stock Price Scraper}}{Fall 2016 -- Present}
+\datedsubsection{\textbf{Automated Stock Price Scraper}}{Aug 2016 -- Dec 2016}
 \role{Python}{Individual Project}
 \begin{itemize}[noitemsep, nolistsep]
-  \item Developed automated python script for Google Finance stock scraper 
+  \item Developed automated python script for Google Finance stock scraper
   \item Exported stock data to SQL Database hosted on Raspberry Pi 3 for comparison model
+  \item Implemented price prediction algorithm and graphical output for various blue chip stocks in Python
 \end{itemize}
 
-\datedsubsection{\textbf{Reconfigurable RF Devices Research}}{Fall 2015 -- Present}
-\role{RF/Microwave Researcher}{}
-%Brief introduction: Research in liquid-metal-based reconfigurable RF devices
-\begin{itemize}[noitemsep,nolistsep]
-  \item Published two conference papers on reconfigurable liquid-metal-based RF devices
-  \item Main author on undergraduate proposal which was funded \$2000
-\end{itemize}
-
-%\datedsubsection{\textbf{C++ Monopoly Interactive Game}}{Spring 2016 -- Summer 2016}
-%\role{C++}{Individual Project}
-%Brief introduction: The RPG that you wanted when you were younger but couldn't find... So we made it.
-%\begin{itemize}[noitemsep,nolistsep]
-% \item Built structured C++ backend using class inheritance and C++11 standard libraries
-%\end{itemize}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
-
-%\section{\faCogs\ Skills}
-%\begin{itemize}[parsep=0.5ex]
-%  \item Programming Languages: C++ > C/MATLAB > Python/React.js/VHDL/LaTeX > Swift 
-%  \item Experience in Unix, Linux, Windows, OSX 
-%\end{itemize}
-
-\section{%\faInfo\ 
+\section{%\faInfo\
 Extracurricular}
-
-\datedsubsection{\textbf{University of Hawaii IEEE Student Branch}}{Fall 2014 -- Present}
-\role{Board Member}{}
-
+\datedsubsection{\textbf{University of Hawaii IEEE - HKN Branch}}{Aug 2016 -- Present}
 \begin{itemize}[noitemsep,nolistsep]
-  \item Student Advisory Board Chair in SY 2015-2016 
- % \item Organized surveys with over 400 responses to create spreadsheet for student fee allocation for SY 2016-2017
+  \item President for SY 2017-2018 responsible for all operations of the club
+  \item Present funding reports and proposals to student organization funding committees.
 \end{itemize}
 
-\datedsubsection{\textbf{IEEE International Microwave Symposium 2018 Steering Committee}}{Fall 2015 -- Present}
-%\role{Social Media Chair}{}
-%\begin{itemize}[noitemsep,nolistsep]
-%  \item Posted Twitter and Facebook posts reaching pages with more than 4000 likes.
-%\end{itemize}
-
-%\datedsubsection{\textbf{University of Hawaii Eta Kappa Nu Pledge}}{Fall 2016 -- Present}
+\datedsubsection{\textbf{University of Hawaii IEEE Student Branch}}{Aug 2014 -- Present}
+\begin{itemize}[noitemsep,nolistsep]
+  \item Webmaster in SY 2017-2018
+  \item Student Advisory Board Chair in SY 2015-2016
+\end{itemize}
 
 
 
